@@ -31,7 +31,7 @@
 }
 
 .header__nav a:not(:first-child) {
-  border-left: 3px solid #014f86;
+  border-left: 3px solid #0a9396;
 }
 
 .header__nav a:hover {

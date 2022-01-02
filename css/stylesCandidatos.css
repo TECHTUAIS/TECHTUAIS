@@ -1,0 +1,95 @@
+.candidatos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+  background: url(../assets/BackgroundImgRest.png) no-repeat center;
+  background-size: cover;
+}
+
+.candidatos h3 {
+  font-size: 2rem;
+  margin: 3rem;
+  padding: 0.10rem 1rem;
+  text-transform: uppercase;
+  color: #0a9396;
+
+  border-top: 3px solid #014f86;
+  border-bottom: 3px solid #014f86;
+}
+
+.candidatos__cartao {
+  background: #fff;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.candidatos__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  padding: 2rem;
+}
+
+.candidatos__header {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 0.25rem;
+}
+
+.candidatos__header img {
+  max-height: 5rem;
+}
+
+.candidatos__header h4 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.candidatos__body {
+  display: flex;
+  align-items: center;
+  margin: 0.25rem;
+}
+
+.candidatos__description {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.candidatos__svg {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0.5rem;
+  gap: 1rem;
+}
+
+.candidatos__box__icons {
+  width: 3.5rem;
+  height: 4.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-decoration: none;
+  color: unset;
+}
+
+.candidatos__svg i {
+  font-size: 3.5rem;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.candidatos__svg i:hover {
+  /* filter: brightness(0.8); */
+  padding-bottom: 1rem;
+}
+
+.bxl-linkedin-square {
+  color: #014f86;
+}
