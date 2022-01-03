@@ -93,6 +93,8 @@ var responseArrayMap = ArrayUsers.forEach(user => {
       <div class="candidatos__body">
         <div class="candidatos__description">
           ${user.description}
+
+          <a target="_blank" href="${user.curriculo}">Veja meu currículo!</a>
         </div>
         <div class="candidatos__svg">
           <a href="${user.linkedin}" target="_blank" class="candidatos__box__icons">
