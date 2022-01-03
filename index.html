@@ -94,18 +94,18 @@
         </p>
       </div>  
 
-      <form>
+      <form id="sendForm">
         <label>
           Email: 
-          <input type="text" name="Email" size="50%">
+          <input type="email" name="email" >
         </label>
 
         <label>
           Área de Atuação: 
-          <input type="text" name="Email" size="50%">
+          <input type="text" name="areaatuacao" >
         </label>
 
-        <button type="submit">
+        <button type="submit" id="buttonSendForm">
           Enviar
         </button>
       </form>
@@ -163,6 +163,17 @@
     </div>
   </footer>
 
+  <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function(){
+       emailjs.init("user_Si1WVNZ4bPu1upJHysDar");
+    })();
+ </script>
+
   <script src="js/candidatosRender.js"></script>
+
+  <script src="js/sendForm.js"></script>
 </body>
 </html>

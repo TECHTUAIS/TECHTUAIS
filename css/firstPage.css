@@ -37,3 +37,13 @@
   height: 35rem;
   float: right;
 }
+
+@media (max-width: 800px) {
+  .pngJovens {
+    display: none;
+  }
+
+  .visaoGeral {
+    margin: 1rem;
+  }
+}
