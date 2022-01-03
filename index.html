@@ -6,12 +6,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
   <meta charset="utf-8">
-  <title>Testezin</title>
+  <title>Techtuais</title>
 
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/stylesHeader.css">
   <link rel="stylesheet" href="css/stylesMain.css">
   <link rel="stylesheet" href="css/stylesCandidatos.css">
+  <link rel="stylesheet" href="css/stylesConvite.css">
   <link rel="stylesheet" href="css/stylesFooter.css">
 
   <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
@@ -28,11 +29,11 @@
     >
     
     <nav class="header__nav">
-      <a href="">Visão Geral</a>
+      <a href="#header">Visão Geral</a>
       <a href="">Missão</a>
-      <a href="">Candidatos</a>
-      <a href="">Inscreva-se</a>
-      <a href="">Sobre Nós</a>
+      <a href="#candidatos">Candidatos</a>
+      <a href="#inscrever">Inscreva-se</a>
+      <a href="#sobreNos">Sobre Nós</a>
     </nav>
 
     <img 
@@ -42,7 +43,7 @@
     >
   </header>
 
-  <main class="main">
+  <main class="main" id="header"> 
     <section class="main__header">
       <div class="main__header--title">
         <h1>Conecte-se com o futuro!</h1>
@@ -52,16 +53,46 @@
 
     <div class="divider"></div>
 
-    <section class="candidatos">
+    <section class="candidatos" id="candidatos">
       <h3>Candidatos</h3>
 
       <div id="render_html_users" class="candidatos__container">
 
       </div>
     </section>
+
+
+    <section class="convite" id="inscrever">
+      <div class="convite__header">
+        <h2 class="convite__title"> 
+          Faça parte do nosso time!
+        </h2>
+
+        <p>
+          Vamos juntos fazer parte dessa jornada!<br>
+          Inscreva-se aqui, deixando seu email, currículo e outras informações.</br>
+        </p>
+      </div>  
+
+      <form post="https://api.emailjs.com/api/v1.0/email/send-form">
+        <label>
+          Email: 
+          <input type="text" name="Email" size="50%">
+        </label>
+
+        <label>
+          Área de Atuação: 
+          <input type="text" name="Email" size="50%">
+        </label>
+
+        <button type="submit">
+          Enviar
+        </button>
+      </form>
+    </section>  
   </main>
 
-  <footer class="footer">
+  <footer class="footer" id="sobreNos">
     <h2 class="footer__title">
       Sobre nós
     </h2>

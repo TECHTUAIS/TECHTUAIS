@@ -1,8 +1,14 @@
+.main {
+  background: url(../assets/BackgroundImgRest.png) no-repeat center;
+  background-size: cover;
+  padding: 5rem 0 8rem 0; 
+}
+
 .main__header {
   height: calc(100vh - 5rem);
   background: url(../assets/backgroundImgBools.png) no-repeat center;
   background-size: cover;
-  padding: 7rem 0 0 5rem;
+  padding: 11rem 0 0 5rem;
 }
 
 .main__header--title {
