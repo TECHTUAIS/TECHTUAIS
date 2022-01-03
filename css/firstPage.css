@@ -1,0 +1,39 @@
+.firstPage {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.firstPage section {
+  display: flex;
+  flex-direction: column;
+  
+  gap: 2rem;
+}
+
+.visaoGeral {
+  display: flex;
+  flex-direction: column;
+
+  margin-left: 2rem;
+}
+
+.visaoGeral h3 {
+  font-size: 2rem;
+  color: #00CED1;
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+}
+
+.visaoGeral p {
+  border-left: 3px solid #00CED1;
+  padding-left: 1rem;
+  font-size: 1.25rem;
+  color: black;
+}
+
+.pngJovens {
+  width: 35rem;
+  height: 35rem;
+  float: right;
+}
