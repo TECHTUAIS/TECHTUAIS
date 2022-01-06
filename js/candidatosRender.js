@@ -84,7 +84,6 @@ var ArrayUsers = [
 var section = document.querySelector('#render_html_users');
 
 var responseArrayMap = ArrayUsers.forEach(user => {
-<<<<<<< HEAD
 
   var userHtml =  `
     <div class="candidatos__cartao" {
@@ -94,21 +93,11 @@ var responseArrayMap = ArrayUsers.forEach(user => {
     } data-animate='up'>
       <div class="candidatos__header">
         <img src="${user.image}" alt="${user.name}"  />
-=======
-  var userHtml =  `
-    <div class="candidatos__cartao">
-      <div class="candidatos__header">
-        <img src="${user.image}" alt="${user.name}"/>
->>>>>>> ae7ea0c9df51192f7b8a25b58dad229ed6d03555
         <h4>${user.name}</h4>
       </div>
       <div class="candidatos__body">
         <div class="candidatos__description">
           ${user.description}
-<<<<<<< HEAD
-=======
-
->>>>>>> ae7ea0c9df51192f7b8a25b58dad229ed6d03555
           <a target="_blank" href="${user.curriculo}">Veja meu currículo!</a>
         </div>
         <div class="candidatos__svg">
@@ -124,8 +113,4 @@ var responseArrayMap = ArrayUsers.forEach(user => {
     </div>
   `;
   section.innerHTML += userHtml;
-<<<<<<< HEAD
 });
-=======
-});
->>>>>>> ae7ea0c9df51192f7b8a25b58dad229ed6d03555
