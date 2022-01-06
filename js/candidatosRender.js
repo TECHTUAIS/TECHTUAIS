@@ -27,6 +27,7 @@ var ArrayUsers = [
   },
   {
     name: "Élson Endell",
+    area: "Peguiçoso",
     description: "<p>Sou o Élson, tenho 18 anos, moro em Timon-MA. A tecnologia é o futuro de todas as profissões. Extremamente dinâmico, administração, trabalho em equipe.</p>",
     image: "https://firebasestorage.googleapis.com/v0/b/techtuais-a0e95.appspot.com/o/%C3%89lsonEndell.jpg?alt=media&token=fa5fe274-ab19-4b4e-bd07-897edeaf8502",
     github: "https://github.com/elson-endell",
@@ -35,6 +36,7 @@ var ArrayUsers = [
   },
   {
     name: "Evellyn Yokoyama",
+    area: "Preguiçoso",
     description: "<p>Sou a Evellyn, tenho 17 anos, moro em Goiânia-Go. Estou me aventurando na área da tecnologia. Facilidade em trabalho em equipe, comunicação e criatividade.</p>",
     image: "https://firebasestorage.googleapis.com/v0/b/techtuais-a0e95.appspot.com/o/EvellynMayumi.jpg?alt=media&token=d09e67ff-6b4f-4269-99af-3d534a543691",
     github: "https://github.com/Evellym",
@@ -43,6 +45,7 @@ var ArrayUsers = [
   },
   {
     name: "Fabyola Campos",
+    area: "Desenvolvedor Web",
     description: "<p>Sou a Fabyola, moro Virgem da Lapa (Minas Gerais). Sempre busquei aprender coisas novas e meu amor pela programação foi graças aos vários benefícios dela em nossa vida. Facilidade em gestão de tempo, comunicação, flexibilidade.</p>",
     image: "https://firebasestorage.googleapis.com/v0/b/techtuais-a0e95.appspot.com/o/FabyolaCampos.jpg?alt=media&token=db44f02e-9e16-499e-842f-bdf21ccfc2fe",
     github: "https://github.com/fabyolaf",
@@ -51,6 +54,7 @@ var ArrayUsers = [
   },
   {
     name: "Felipe Souza",
+    area: "Desenvolvedor Web",
     description: "<p>Me chamo Felipe tenho 18 anos, sou de Ibirité-MG. Cursando Técnico em Mecatrônica. Gosto sempre de estar aprendendo e evoluindo. Facilidade em gestão de pessoas, marketing, inglês.</p>",
     image: "https://firebasestorage.googleapis.com/v0/b/techtuais-a0e95.appspot.com/o/FelipeSouza.jpg?alt=media&token=0e5ec0bf-5c78-45ce-aad0-ea1aa205a0d5",
     github: "https://github.com/Lype358",
@@ -59,6 +63,7 @@ var ArrayUsers = [
   },
   {
     name: "Pâmela Sales",
+    area: "Desenvolvedor Web",
     description: "<p>Sou a Pâmela, tenho 16 anos e moro em Belo Horizonte-MG Estudante do ensino médio, sempre em busca de conhecimento. Facilidade em comunicação e produtividade.</p>",
     image: "https://firebasestorage.googleapis.com/v0/b/techtuais-a0e95.appspot.com/o/Pamela.jpg?alt=media&token=a9361bb0-9911-4a2f-aec8-42aeb1d821e1",
     github: "https://github.com/Pamela1600",
@@ -85,46 +90,53 @@ var ArrayUsers = [
   }
 ]
 
-function returnUx (value){
-  if (value.area == "uxDesign")
-    return value;
+function constroiTabela(array) {
+  var section = document.querySelector('#render_html_users');
+  var elements = document.querySelectorAll('.candidatos__cartao');
+
+  if(elements.length > 0) {
+    elements.forEach(user => user.remove());
+  }
+
+  array.forEach(user => {
+    var userHtml =  `
+      <div class="candidatos__cartao" {
+        constructor() {
+
+        }
+      } data-animate='up'>
+        <div class="candidatos__header">
+          <img src="${user.image}" alt="${user.name}"  />
+          <h4>${user.name}</h4>
+        </div>
+        <div class="candidatos__body">
+          <div class="candidatos__description">
+            ${user.description}
+            <a target="_blank" href="${user.curriculo}">Veja meu currículo!</a>
+          </div>
+          <div class="candidatos__svg">
+            <a href="${user.linkedin}" target="_blank" class="candidatos__box__icons">
+              <i class='bx bxl-linkedin-square'></i>
+            </a>
+
+            <a href="${user.github}" target="_blank" class="candidatos__box__icons">
+              <i class='bx bxl-github'></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    `;
+    section.innerHTML += userHtml;
+  })
 }
 
-var filterUsers = ArrayUsers.filter(returnUx);
+var filterDesign = ArrayUsers.filter(user => user.area === "uxDesign");
+var filterDesenvolvedor = ArrayUsers.filter(user => user.area === "Desenvolvedor Web");
+var filterPreguisoso = ArrayUsers.filter(user => user.area === "Preguiçoso");
 
-var section = document.querySelector('#render_html_users');
-var users = ArrayUsers;
+document.querySelector("#filterDesign").addEventListener("click", () => constroiTabela(filterDesign));
+document.querySelector("#filterDesenvolvedor").addEventListener("click", () => constroiTabela(filterDesenvolvedor));
+document.querySelector("#filterPreguisoso").addEventListener("click", () => constroiTabela(filterPreguisoso));
+document.querySelector("#notfilter").addEventListener("click", () => constroiTabela(ArrayUsers));
 
-
-var responseArrayMap = users.forEach(user => {
-
-  var userHtml =  `
-    <div class="candidatos__cartao" {
-      constructor() {
-
-      }
-    } data-animate='up'>
-      <div class="candidatos__header">
-        <img src="${user.image}" alt="${user.name}"  />
-        <h4>${user.name}</h4>
-      </div>
-      <div class="candidatos__body">
-        <div class="candidatos__description">
-          ${user.description}
-          <a target="_blank" href="${user.curriculo}">Veja meu currículo!</a>
-        </div>
-        <div class="candidatos__svg">
-          <a href="${user.linkedin}" target="_blank" class="candidatos__box__icons">
-            <i class='bx bxl-linkedin-square'></i>
-          </a>
-
-          <a href="${user.github}" target="_blank" class="candidatos__box__icons">
-            <i class='bx bxl-github'></i>
-          </a>
-        </div>
-      </div>
-    </div>
-  `;
-  section.innerHTML += userHtml;
-
-});
+constroiTabela(ArrayUsers);
