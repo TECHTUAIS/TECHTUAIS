@@ -1,6 +1,9 @@
 .header {
   position: fixed;
+<<<<<<< HEAD
   z-index: 10;
+=======
+>>>>>>> ae7ea0c9df51192f7b8a25b58dad229ed6d03555
   top: 0;
   left: 0;
   right: 0;
@@ -24,12 +27,20 @@
   align-items: center;
 
   margin-left: auto;
+<<<<<<< HEAD
   margin-right: 0.5rem;
+=======
+  margin-right: 2rem;
+>>>>>>> ae7ea0c9df51192f7b8a25b58dad229ed6d03555
 }
 
 .header__nav a {
   color: black;
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> ae7ea0c9df51192f7b8a25b58dad229ed6d03555
   padding: 0 1rem;
 
   text-decoration: none;
@@ -48,7 +59,10 @@
 .header__symbol {
   max-height: 3rem;
   margin: 0.25rem;
+<<<<<<< HEAD
   padding-right: 1rem;
+=======
+>>>>>>> ae7ea0c9df51192f7b8a25b58dad229ed6d03555
 }
 
 @media (max-width: 800px) {
@@ -59,4 +73,8 @@
   .header__symbol {
     display: none;
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> ae7ea0c9df51192f7b8a25b58dad229ed6d03555

@@ -7,7 +7,11 @@
 .firstPage section {
   display: flex;
   flex-direction: column;
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> ae7ea0c9df51192f7b8a25b58dad229ed6d03555
   gap: 2rem;
 }
 
@@ -46,6 +50,7 @@
   .visaoGeral {
     margin: 1rem;
   }
+<<<<<<< HEAD
 }
 [data-anime]{
   opacity: 0;
@@ -58,3 +63,6 @@
   opacity: 1;
   transform: translate3d(0,0,0);
 }
+=======
+}
+>>>>>>> ae7ea0c9df51192f7b8a25b58dad229ed6d03555

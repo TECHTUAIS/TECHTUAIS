@@ -96,6 +96,7 @@
 
 .bxl-linkedin-square {
   color: #014f86;
+<<<<<<< HEAD
 }
 
 [data-anime]{
@@ -109,3 +110,6 @@
   opacity: 1;
   transform: translate3d(0,0,0);
 }
+=======
+}
+>>>>>>> ae7ea0c9df51192f7b8a25b58dad229ed6d03555
