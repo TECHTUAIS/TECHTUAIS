@@ -1,0 +1,78 @@
+.convite {
+  background: #014f86;
+  margin: 5rem 1rem 1rem 1rem;
+
+  border-radius: 0.5rem;
+  padding: 2rem;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.convite__title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.convite__header p {
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: 200;
+}
+
+.convite form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.convite form label {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 200;
+  gap: 0.5rem;
+}
+
+.convite form label input {
+  padding: 1rem;
+  border-radius: 0.25rem;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  transition: all 0.2s;
+}
+
+.convite form button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 1rem;
+  border-radius: 0.25rem;
+  border: none;
+  background-color: #fff;
+  color: #014f86;
+  font-size: 1.24rem;
+  font-weight: 600;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.convite form button:hover {
+  filter: brightness(0.8);
+}
+
+.convite form label input:focus {
+  filter: brightness(0.8);
+}
+
+@media(max-width: 1000px) {
+  .convite {
+    grid-template-columns: 1fr;
+  }
+}

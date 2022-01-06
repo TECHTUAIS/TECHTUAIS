@@ -1,0 +1,45 @@
+.main {
+  background: url(../assets/BackgroundImgRest.png) no-repeat center;
+  background-size: cover;
+  padding: 5rem 0 8rem 0;
+}
+
+.main__header {
+  height: calc(100vh - 5rem);
+  background: url(../assets/backgroundImgBools.png) no-repeat center;
+  background-size: cover;
+  padding: 11rem 0 0 5rem;
+}
+
+.main__header--title {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  padding-left: 1rem;
+  border-left: 3px solid #ccc;
+}
+
+.main__header--title h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #014f86;
+}
+
+.main__header--title h2 {
+  font-size: 2rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #014f86;
+}
+
+.divider {
+  width: 100%;
+  height: 1rem;
+  background: #014f86;
+}
+
+[data-anime='right']{
+  transform: translate3d(-50px,0,0);
+  transition: 2s;
+}

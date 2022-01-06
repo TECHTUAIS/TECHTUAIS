@@ -1,0 +1,22 @@
+{
+  "name": "umapasta",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lucas-Eduardo-Goncalves/Teste.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Lucas-Eduardo-Goncalves/Teste/issues"
+  },
+  "homepage": "https://github.com/Lucas-Eduardo-Goncalves/Teste#readme",
+  "dependencies": {
+    "@emailjs/browser": "^3.3.1"
+  }
+}

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <meta charset="utf-8">
+  <title>Techtuais</title>
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/stylesHeader.css">
+  <link rel="stylesheet" href="css/stylesMain.css">
+  <link rel="stylesheet" href="css/firstPage.css">
+  <link rel="stylesheet" href="css/stylesCandidatos.css">
+  <link rel="stylesheet" href="css/stylesConvite.css">
+  <link rel="stylesheet" href="css/stylesFooter.css">
+
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+
+    <img
+      src="assets/logo.png"
+      alt="techtuais"
+      class="header__logo"
+    >
+
+    <nav class="header__nav">
+      <a href="#header">Visão Geral</a>
+      <a href="#missao">Missão</a>
+      <a href="#candidatos">Candidatos</a>
+      <a href="#inscrever">Inscreva-se</a>
+      <a href="#sobreNos">Sobre Nós</a>
+    </nav>
+
+    <img
+      src="assets/symbol.png"
+      alt="symbol"
+      class="header__symbol"
+    >
+  </header>
+
+  <main class="main" id="header">
+    <section class="main__header">
+      <div class="main__header--title" data-anime='right'>
+        <h1>Conecte-se com o futuro!</h1>
+        <h2>Conecte-se com a juventude!</h2>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <div class="firstPage" id="missao">
+      <section>
+        <div class="visaoGeral" data-anime='up'>
+          <h3>Visão Geral</h3>
+          <p>A tribo surgiu da união de estudantes interessados pela tecnologia com objetivos em comum:
+            oferecer a oportunidade das empresas em conhecer pessoas dedicadas e que buscam explorar
+            a área a favor das necessidades do perfil da vaga e incentivar o interesse de outros jovens pela
+            programação.</p>
+        </div>
+
+        <div class="visaoGeral" data-anime='up'>
+          <h3>Missão</h3>
+          <p>Ser a ponte que une ambos os lados: Aprender, Viver.</p>
+        </div>
+      </section>
+
+      <img src="assets/pessoascombolinha.png" alt="jovensTech" class="pngJovens" data-anime='up'>
+    </div>
+
+    <section class="candidatos" id="candidatos">
+      <h3 data-anime='up'>Candidatos</h3>
+
+      <div id="render_html_users"  data-anime='up' class="candidatos__container">
+
+      </div>
+    </section>
+
+
+    <section class="convite"data-anime='up' id="inscrever">
+      <div class="convite__header">
+        <h2 class="convite__title">
+          Faça parte do nosso time!
+        </h2>
+
+        <p>
+          Vamos juntos fazer parte dessa jornada!<br>
+          Inscreva-se aqui, deixando seu email, currículo e outras informações.</br>
+        </p>
+      </div>
+
+      <form id="sendForm">
+        <label>
+          Email:
+          <input type="email" name="email" >
+        </label>
+
+        <label>
+          Área de Atuação:
+          <input type="text" name="areaatuacao" >
+        </label>
+
+        <button type="submit" id="buttonSendForm">
+          Enviar
+        </button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer" id="sobreNos">
+    <h2 class="footer__title">
+      Sobre nós
+    </h2>
+
+    <div class="footer__body">
+      <div class="footer__container__left">
+        <div>
+          <h5>Conteúdo:</h5>
+          <p>Endell, Pamela, Thais</p>
+        </div>
+        <div>
+          <h5>UX Design:</h5>
+          <p>Evellyn, Camila, Ruan, Thais</p>
+        </div>
+        <div>
+          <h5>Javascript:</h5>
+          <p>Lucas, Felipe, Ruan</p>
+        </div>
+        <div>
+          <h5>CSS3:</h5>
+          <p>Lucas, Ruan</p>
+        </div>
+        <div>
+          <h5>HTML5:</h5>
+          <p>Davi, Fabyola</p>
+        </div>
+        <div>
+          <h5>Revisão:</h5>
+          <p>Lucas e Camila</p>
+        </div>
+      </div>
+
+      <div class="footer__container__right">
+        <p>
+          Desenvolvido com imensa dedicação, de jovens para jovens.
+        </p>
+
+        <div>
+          <h5>Entre em contato</h5>
+          <div>
+            <a href="mailto:techtuais@gmail.com">
+              <i class='bx bxl-gmail'></i>
+            </a>
+            <i class='bx bxl-github'></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+<script src="js/motion.js"></script>
+
+  <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function(){
+       emailjs.init("user_Si1WVNZ4bPu1upJHysDar");
+    })();
+ </script>
+
+  <script src="js/candidatosRender.js"></script>
+
+  <script src="js/sendForm.js"></script>
+</body>
+</html>
