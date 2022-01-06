@@ -1,6 +1,7 @@
 var ArrayUsers = [
   {
     name: "Lucas Gonçalves",
+    area: "uxDesign",
     description: "<p>Meu nome é Lucas Gonçalves, sou um desenvolvedor web autodidata que vive nos estado de Minas Gerais. Profissionalmente conectado com a indústria de software, interessado no escopo Front-End.</p>",
     image: "https://firebasestorage.googleapis.com/v0/b/techtuais-a0e95.appspot.com/o/LucasGon%C3%A7alves.png?alt=media&token=0b753ae7-cb4f-4993-b8b2-40be6ecf9d77",
     github: "https://github.com/Lucas-Eduardo-Goncalves",
@@ -17,6 +18,7 @@ var ArrayUsers = [
   },
   {
     name: "Davi Nascimento",
+    area: "uxDesign",
     description: "<p>Me chamo Davi, tenho 15 anos, moro em Vitória da Conquista-BA. Cursando o ensino médio, fascinado pelo processo de aprender. Atuo como designer e coordenador de conteúdo. Planejo seguir na área como programador Front-End.</p>",
     image: "https://firebasestorage.googleapis.com/v0/b/techtuais-a0e95.appspot.com/o/DaviNascimento.png?alt=media&token=fe3b6652-baf5-4c0e-857e-582408048edc",
     github: "https://github.com/nDavii",
@@ -65,6 +67,7 @@ var ArrayUsers = [
   },
   {
     name: "Ruan Pablo",
+    area: "uxDesign",
     description: "<p>Sou o Ruan Pablo, tenho 18 anos. Moro em Paracatu-MG. Cursei Ensino de nível técnico em Eletrônica. Compreender o funcionamento das coisas sempre me fascinou e com a tecnologia isso é ainda mais mágico.</p>",
     image: "https://firebasestorage.googleapis.com/v0/b/techtuais-a0e95.appspot.com/o/RuanPablo.jpg?alt=media&token=8a441533-7662-48ac-948c-192fddc150b8",
     github: "https://github.com/Rpablo4",
@@ -73,6 +76,7 @@ var ArrayUsers = [
   },
   {
     name: "Thaís Vitória",
+    area: "uxDesign",
     description: "<p>Me chamo Thais, tenho 17 anos. Faço serviços jurídico integrado ao ensino médio. Através da matemática, me interessei pela área de programação aos 10 anos e hoje dou continuidade.</p>",
     image: "https://firebasestorage.googleapis.com/v0/b/techtuais-a0e95.appspot.com/o/ThaisVitoria.png?alt=media&token=24ffa122-a387-4c10-8df6-3b58d03bcd9b",
     github: "https://github.com/ThaisVitoriaFurquim",
@@ -81,10 +85,18 @@ var ArrayUsers = [
   }
 ]
 
-var section = document.querySelector('#render_html_users');
+function returnUx (value){
+  if (value.area == "uxDesign")
+    return value;
+}
 
-var responseArrayMap = ArrayUsers.forEach(user => {
-<<<<<<< HEAD
+var filterUsers = ArrayUsers.filter(returnUx);
+
+var section = document.querySelector('#render_html_users');
+var users = ArrayUsers;
+
+
+var responseArrayMap = users.forEach(user => {
 
   var userHtml =  `
     <div class="candidatos__cartao" {
@@ -94,21 +106,11 @@ var responseArrayMap = ArrayUsers.forEach(user => {
     } data-animate='up'>
       <div class="candidatos__header">
         <img src="${user.image}" alt="${user.name}"  />
-=======
-  var userHtml =  `
-    <div class="candidatos__cartao">
-      <div class="candidatos__header">
-        <img src="${user.image}" alt="${user.name}"/>
->>>>>>> ae7ea0c9df51192f7b8a25b58dad229ed6d03555
         <h4>${user.name}</h4>
       </div>
       <div class="candidatos__body">
         <div class="candidatos__description">
           ${user.description}
-<<<<<<< HEAD
-=======
-
->>>>>>> ae7ea0c9df51192f7b8a25b58dad229ed6d03555
           <a target="_blank" href="${user.curriculo}">Veja meu currículo!</a>
         </div>
         <div class="candidatos__svg">
@@ -124,8 +126,5 @@ var responseArrayMap = ArrayUsers.forEach(user => {
     </div>
   `;
   section.innerHTML += userHtml;
-<<<<<<< HEAD
+
 });
-=======
-});
->>>>>>> ae7ea0c9df51192f7b8a25b58dad229ed6d03555
