@@ -11,11 +11,30 @@ function constroiTabela(array) {
       <div class="candidatos__cartao" {
         constructor() {
 
+<<<<<<< HEAD
         }
       } data-animate='up'>
         <div class="candidatos__header">
           <img src="${user.image}" alt="${user.name}"  />
           <h4>${user.name}</h4>
+=======
+var responseArrayMap = ArrayUsers.forEach(user => {
+
+  var userHtml =  `
+    <div class="candidatos__cartao" {
+      constructor() {
+
+      }
+    } data-animate='up'>
+      <div class="candidatos__header">
+        <img src="${user.image}" alt="${user.name}"  />
+        <h4>${user.name}</h4>
+      </div>
+      <div class="candidatos__body">
+        <div class="candidatos__description">
+          ${user.description}
+          <a target="_blank" href="${user.curriculo}">Veja meu currículo!</a>
+>>>>>>> 125fdf5a63dc2a7693d221916156f0f24dfa514d
         </div>
         <div class="candidatos__body">
           <div class="candidatos__description">
@@ -33,6 +52,7 @@ function constroiTabela(array) {
           </div>
         </div>
       </div>
+<<<<<<< HEAD
     `;
     section.innerHTML += userHtml;
   })
@@ -48,3 +68,9 @@ document.querySelector("#filterPreguisoso").addEventListener("click", () => cons
 document.querySelector("#notfilter").addEventListener("click", () => constroiTabela(ArrayUsers));
 
 constroiTabela(ArrayUsers);
+=======
+    </div>
+  `;
+  section.innerHTML += userHtml;
+});
+>>>>>>> 125fdf5a63dc2a7693d221916156f0f24dfa514d
