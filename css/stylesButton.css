@@ -1,0 +1,22 @@
+.filterOptions{
+display: flex;
+justify-content: flex-start;
+gap: 10px;
+transition: 0.5s;
+}
+
+.botao{
+border-radius: 16px;
+padding: 5px;
+text-decoration: none;
+}
+
+.botao:hover{
+  color: #0a9396;
+  border-color: #0a9396;
+}
+
+.selectedButton{
+  color: #0a9396;
+  border-color: #0a9396;
+}

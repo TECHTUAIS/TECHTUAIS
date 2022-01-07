@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="css/stylesCandidatos.css">
   <link rel="stylesheet" href="css/stylesConvite.css">
   <link rel="stylesheet" href="css/stylesFooter.css">
+  <link rel="stylesheet" href="css/stylesButton.css">
 
   <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 
@@ -76,11 +77,11 @@
 
     <section class="candidatos" id="candidatos">
       <h3 data-anime='up'>Candidatos</h3>
-      <div class="filterOptions">
-        <button type="button" id="filterDesign" >UX/UI Designer</button>
-        <button type="button" id="filterDesenvolvedor" >Desenvolvedor web</button>
-        <button type="button" id="filterPreguisoso" >Preguiçoso</button>
-        <button type="button" id="notfilter" >Todos</button>
+      <div class="filterOptions" data-anime='up'>
+        <button type="button" class="botao" id="filterDesign" >UX/UI Designer</button>
+        <button type="button" class="botao" id="filterDesenvolvedor" >Desenvolvedor web</button>
+        <button type="button" class="botao"  id="filterPreguisoso" >Preguiçoso</button>
+        <button type="button" class="botao"  id="notfilter" >Todos</button>
       </div>
 
       <div id="render_html_users"  data-anime='up' class="candidatos__container">
@@ -170,7 +171,7 @@
     </div>
   </footer>
 
-  
+
   <script type="text/javascript"
     src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
   </script>

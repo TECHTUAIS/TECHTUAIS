@@ -18,3 +18,11 @@ window.addEventListener("scroll", ()=>{
 
 maintext=document.querySelector(".main__header--title");
 maintext.classList.add("animate");
+
+var idButton;
+var botoes = document.querySelector(".filterOptions");
+botoes.addEventListener('click', function(idBut) {
+var clearClass = document.querySelectorAll(".botao");
+clearClass.forEach(clearClass=>clearClass.classList.remove("selectedButton"));
+  idBut.target.classList.add("selectedButton");
+});
