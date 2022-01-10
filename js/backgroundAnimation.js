@@ -87,8 +87,8 @@ function init(){
     let size = (Math.random()*5)+1;
     let x = (Math.random()*((innerWidth - size * 2) - (size * 2)) + size * 2);
     let y = (Math.random()*((innerHeight - size * 2) - (size * 2)) + size * 2);
-    let directionX = (Math.random()*1.5);
-    let directionY =(Math.random()*1.5);
+    let directionX = (Math.random()*1);
+    let directionY =(Math.random()*1);
     let color = '#014f86';
 
     particleArray.push(new Particle(x, y, directionX, directionY, size, color));
