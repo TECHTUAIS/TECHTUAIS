@@ -74,7 +74,7 @@ var ArrayUsers = [
   {
     name: "Ruan Pablo",
     area: "UX/UI Design",
-    description: "<p>Sou o Ruan Pablo, tenho 18 anos. Moro em Paracatu-MG. Cursei Ensino de nível técnico em Eletrônica. Designer gráfico, aspirante a UI/UX Designer.</p>",
+    description: "<p>Sou o Ruan Pablo, tenho 18 anos. Moro em Paracatu-MG. Cursei Ensino de nível técnico em Eletrônica. Fascinado pela tecnologia e suas aplicações. Designer gráfico, aspirante a UI/UX Designer.</p>",
     image: "https://firebasestorage.googleapis.com/v0/b/techtuais-a0e95.appspot.com/o/RuanPablo.jpg?alt=media&token=8a441533-7662-48ac-948c-192fddc150b8",
     github: "https://github.com/Rpablo4",
     linkedin: "https://www.linkedin.com/in/ruan-pablo-38533520b/",
