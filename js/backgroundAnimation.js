@@ -113,7 +113,7 @@ function init(){
      }
    }
  }
-//ANIMA A MERDA DO LOOP
+//ANIMA O LOOP
 function animate(){
   requestAnimationFrame(animate);
   ctx.clearRect(0,0,innerWidth,innerHeight);
